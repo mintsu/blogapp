@@ -15,6 +15,7 @@ class PostTest extends CakeTestCase {
 	public $fixtures = array(
 		'app.post'
 	);
+	//public $autoFixtures = false;
 
 /**
  * setUp method
@@ -24,6 +25,7 @@ class PostTest extends CakeTestCase {
 	public function setUp() {
 		parent::setUp();
 		$this->Post = ClassRegistry::init('Post');
+		//$this->loadFixtures('Post100Record', 'Comment');
 	}
 
 /**
